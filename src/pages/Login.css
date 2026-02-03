@@ -1,12 +1,13 @@
-html,body{
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
 }
-body{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   min-height: 100vh;
-  background: linear-gradient(135deg,#0f0c29,#302b63,#24243e);
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -14,12 +15,12 @@ body{
   line-height: 1.6;
 }
 
-.form-container{
+.form-container {
   max-width: 450px;
   margin: 80px auto;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2) ;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 40px;
   border-radius: 12px;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -29,7 +30,7 @@ body{
   animation: fadeIn 0.8s ease-out;
 }
 
-.form-title{
+.form-title {
   text-align: center;
   margin-bottom: 30px;
   color: white;
@@ -38,12 +39,12 @@ body{
   letter-spacing: -0.5px;
 }
 
-.form-group{
+.form-group {
   margin-bottom: 25px;
   text-align: left;
 }
 
-.form-group label{
+.form-group label {
   display: block;
   margin-bottom: 8px;
   color: white;
@@ -51,7 +52,7 @@ body{
   font-weight: 600;
 }
 
-.form-group input{
+.form-group input {
   width: 100%;
   padding: 12px 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -62,80 +63,81 @@ body{
   font-size: 1em;
   transition: all 0.3s ease-in-out;
 }
- .form-group input::placeholder{
+.form-group input::placeholder {
   color: rgba(255, 255, 255, 0.7);
- }
+}
 
- .form-group input:focus{
-   outline: none;
-   border-color: #00bfff;
-   box-shadow: 0 0 0 3px rgba(0, 191, 255, 0.25);
-   background: rgba(255, 255, 255, 0.15);
- }
+.form-group input:focus {
+  outline: none;
+  border-color: #00bfff;
+  box-shadow: 0 0 0 3px rgba(0, 191, 255, 0.25);
+  background: rgba(255, 255, 255, 0.15);
+}
 
- .btn-primary{
+.btn-primary {
   width: 100%;
   padding: 14px 25px;
   background-color: #00bfff;
   color: white;
-  border:none;
+  border: none;
   border-radius: 8px;
   font-size: 1.1em;
   font-weight: 600;
   cursor: pointer;
   margin-top: 20px;
-  transition: background-color 0.3s ease, transform 0.2s ease ;
- }
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+}
 
- .btn-primary:hover{
+.btn-primary:hover {
   background-color: #009acd;
   transform: translateY(-2px);
- }
+}
 
- .btn-primary:active{
+.btn-primary:active {
   transform: translateY(0);
- }
+}
 
- .link-text{
+.link-text {
   margin-top: 25px;
   color: white;
   font-size: 0.95em;
   text-align: center;
- }
+}
 
-  .link-text a{
+.link-text a {
   color: #00bfff;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
- }
+}
 
- .link-text a:hover{
+.link-text a:hover {
   color: #009acd;
   text-decoration: underline;
- }
+}
 
- @keyframes fadeIn{
-  form{
+@keyframes fadeIn {
+  form {
     opacity: 0;
     transform: translateY(20px);
   }
-  to{
+  to {
     opacity: 1;
     transform: translateY(0);
   }
- }
- @media (max-width: 768px){
-  .form-container{
+}
+@media (max-width: 768px) {
+  .form-container {
     margin: 40px 20px;
     padding: 30px 20px;
   }
-  .form-title{
+  .form-title {
     font-size: 1.8em;
   }
-  .btn-primary{
+  .btn-primary {
     padding: 12px 20px;
     font-size: 1em;
   }
-
- }
+}
