@@ -3,7 +3,8 @@ import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import AuthGuard from './Auth/AuthGuard'
-import Dashboard from './pages/dashboard'
+import Dashboard from './pages/Dashboard'
+
 
 const DefaultRoute = () => {
   const loginData = JSON.parse(localStorage.getItem('loginData'));
